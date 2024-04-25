@@ -15,6 +15,9 @@ args = ["-l"]
 normal = {family = "Fira Code", style = "Regular"}
 size = 14
 
+[selection]
+save_to_clipboard = true
+
 # Solarized osaka
 [colors.primary]
 background = '#00141a' #color.base04

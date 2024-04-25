@@ -79,5 +79,5 @@ source /home/wh0am1/.local/bin/virtualenvwrapper.sh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(starship init zsh)"
-eval "$(zellij setup --generate-auto-start zsh)"
