@@ -12,8 +12,8 @@ program = "/bin/zsh"
 args = ["-l"]
 
 [font]
-normal = {family = "Fira Code", style = "Regular"}
-size = 14
+normal = {family = "Monaco Nerd Font", style = "Regular"}
+size = 10
 
 [selection]
 save_to_clipboard = true
