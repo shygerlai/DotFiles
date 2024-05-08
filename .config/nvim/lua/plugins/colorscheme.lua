@@ -1,10 +1,11 @@
-return {
-  "craftzdog/solarized-osaka.nvim",
+return
+{
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
-  opts = function()
-    return {
-      transparent = true,
-    }
-  end,
+  opts = function ()
+        return{
+            transparent = true,
+        }
+        end,
 }
