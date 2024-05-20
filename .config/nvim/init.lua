@@ -26,6 +26,7 @@ autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++14 -Wall %<CR>
 vim.g.autoformat = false
 
 vim.cmd([[
+inoremap {<CR> {<CR>}<Esc>O
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 ]])
