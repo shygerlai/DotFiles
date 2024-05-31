@@ -1,46 +1,42 @@
-[window]
-padding = {x = 1, y = 1}
-dynamic_padding = false
-decorations = "Full"
-opacity = 0.8
-startup_mode = "Windowed"
-title = "Alacritty"
-dynamic_title = false
+#   █████╗ ██╗      █████╗  ██████╗██████╗ ██╗████████╗████████╗██╗   ██╗
+#  ██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+#  ███████║██║     ███████║██║     ██████╔╝██║   ██║      ██║    ╚████╔╝ 
+#  ██╔══██║██║     ██╔══██║██║     ██╔══██╗██║   ██║      ██║     ╚██╔╝  
+#  ██║  ██║███████╗██║  ██║╚██████╗██║  ██║██║   ██║      ██║      ██║   
+#  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝   
+#	gh0stzk - https://github.com/gh0stzk/dotfiles
 
-[shell]
-program = "/bin/zsh"
-args = ["-l"]
+import = ["~/.config/alacritty/rice-colors.toml", "~/.config/alacritty/fonts.toml"]
 
-[font]
-normal = {family = "Monaco Nerd Font", style = "Regular"}
-size = 10
+live_config_reload = true
+
+[cursor]
+blink_interval = 550
+unfocused_hollow = false
+thickness = 0.15
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
 
 [selection]
 save_to_clipboard = true
 
-# Solarized osaka
-[colors.primary]
-background = '#00141a' #color.base04
-foreground = '#839495' #color.fg
+[window]
+decorations = "none"
+dynamic_title = true
+opacity = 1.0
+dynamic_padding = true
 
-# Normal colors
-[colors.normal]
-black   = '#00141a' #color.base04
-red     = '#dc312e' #color.red
-green   = '#859900' #color.green
-yellow  = '#b38600' #color.yellow
-blue    = '#278bd3' #color.blue
-magenta = '#d33682' #color.magenta
-cyan    = '#2aa298' #color.cyan
-white   = '#ede7d4' #color.base2
+[window.padding]
+x = 15
+y = 15
 
-# Bright colors
-[colors.bright]
-black   = '#002d38' #color.base03
-red     = '#f65351' #color.red300
-green   = '#b7fa00' #color.green300
-yellow  = '#ffbf00' #color.yellow300
-blue    = '#47adf5' #color.blue300
-magenta = '#f254a1' #color.magenta300
-cyan    = '#2beede' #color.cyan300
-white   = '#fdf6e2' #color.base3
+[scrolling]
+history = 10000
+multiplier = 3
+
+[bell]
+animation = "Linear"
+duration = 0
+command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/dialog-error.oga"] }
