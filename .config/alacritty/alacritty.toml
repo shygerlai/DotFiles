@@ -1,12 +1,4 @@
-#   █████╗ ██╗      █████╗  ██████╗██████╗ ██╗████████╗████████╗██╗   ██╗
-#  ██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
-#  ███████║██║     ███████║██║     ██████╔╝██║   ██║      ██║    ╚████╔╝ 
-#  ██╔══██║██║     ██╔══██║██║     ██╔══██╗██║   ██║      ██║     ╚██╔╝  
-#  ██║  ██║███████╗██║  ██║╚██████╗██║  ██║██║   ██║      ██║      ██║   
-#  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝   
-#	gh0stzk - https://github.com/gh0stzk/dotfiles
-
-import = ["~/.config/alacritty/rice-colors.toml", "~/.config/alacritty/fonts.toml"]
+import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
 
 live_config_reload = true
 
@@ -25,16 +17,17 @@ save_to_clipboard = true
 [window]
 decorations = "none"
 dynamic_title = true
-opacity = 1.0
+opacity = 0.9
 dynamic_padding = true
+startup_mode = "Maximized" 
 
 [window.padding]
-x = 15
-y = 15
+x = 0
+y = 0
 
 [scrolling]
 history = 10000
-multiplier = 3
+multiplier = 2
 
 [bell]
 animation = "Linear"
