@@ -48,6 +48,7 @@ alias du="du -h"
 alias ipy="ipython"
 alias gdb="gdb -q"
 alias config="git --git-dir=$HOME/.cfg --work-tree=$HOME"
+alias z="zellij"
 # Env
 export LD_PRELOAD=""
 export EDITOR="vim"
