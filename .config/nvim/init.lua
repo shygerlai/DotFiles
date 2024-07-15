@@ -30,3 +30,5 @@ inoremap {<CR> {<CR>}<Esc>O
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 ]])
+
+vim.opt.termguicolors = true
