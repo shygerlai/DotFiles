@@ -1,25 +1,25 @@
 setopt magicequalsubst
 setopt notify
 WORDCHARS=${WORDCHARS//\/}
-bindkey -e                                        # emacs key bindings
-bindkey ' ' magic-space                           # do history expansion on space
-bindkey '^U' backward-kill-line                   # ctrl + U
-bindkey '^[[3;5~' kill-word                       # ctrl + Supr
-bindkey '^[[3~' delete-char                       # delete
-bindkey '^[[1;5C' forward-word                    # ctrl + ->
-bindkey '^[[1;5D' backward-word                   # ctrl + <-
-bindkey '^[[5~' beginning-of-buffer-or-history    # page up
-bindkey '^[[6~' end-of-buffer-or-history          # page down
-bindkey '^[[H' beginning-of-line                  # home
-bindkey '^[[F' end-of-line                        # end
+bindkey -e
+bindkey ' ' magic-space
+bindkey '^U' backward-kill-line
+bindkey '^[[3;5~' kill-word
+bindkey '^[[3~' delete-char
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[5~' beginning-of-buffer-or-history
+bindkey '^[[6~' end-of-buffer-or-history
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
 bindkey '^[[Z' undo
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=20000
-setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
-setopt hist_ignore_dups       # ignore duplicated commands history list
-setopt hist_ignore_space      # ignore commands that start with space
-setopt hist_verify            # show command with history expansion to user before running it
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_verify
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
 alias history="history 0"
 alias ll='ls -al'
@@ -48,20 +48,20 @@ alias du="du -h"
 alias ipy="ipython"
 alias gdb="gdb -q"
 alias config="git --git-dir=$HOME/.cfg --work-tree=$HOME"
-alias z="zellij"
 # Env
 export LD_PRELOAD=""
 export EDITOR="vim"
 export PATH="$HOME/bin:/usr/lib/ccache/bin/:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/opt/bin:/usr/games/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.local/share/nvim/mason/bin:$PATH # yup, wtf
+export PATH=$HOME/.local/share/nvim/mason/bin:$PATH
 export TERM=xterm-256color
-# For ignoring case
+# Completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
-# Python stuff
+# Python
 export PYTHONIOENCODING=utf8
 # zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
