@@ -2,6 +2,7 @@ setopt magicequalsubst
 setopt notify
 WORDCHARS=${WORDCHARS//\/}
 bindkey -e
+bindkey -s ^f "zellij-sessionizer\n"
 bindkey ' ' magic-space
 bindkey '^U' backward-kill-line
 bindkey '^[[3;5~' kill-word
