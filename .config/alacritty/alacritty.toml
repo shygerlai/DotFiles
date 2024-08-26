@@ -22,14 +22,9 @@ dynamic_padding = true
 startup_mode = "Maximized" 
 
 [window.padding]
-x = 0
-y = 0
+x = 3
+y = 3
 
 [scrolling]
 history = 10000
 multiplier = 2
-
-[bell]
-animation = "Linear"
-duration = 0
-command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/dialog-error.oga"] }
