@@ -202,24 +202,6 @@ ui {
     }
 }
 
-themes {
-	rose-pine {
-        bg "#dddddd"
-		black "#e6e6e6"
-		blue "#002699"
-		cyan "#007399"
-		fg "#000000"
-		green "#009926"
-		magenta "#730099"
-		orange "#997300"
-		red "#990026"
-		white "#4d4d4c"
-		yellow "#739900"
-	}
-}
-
 simplified_ui false
-default_layout "compact"
 pane_frames false
 scroll_buffer_size 10000
-theme "tokyo-night"
