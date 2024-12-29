@@ -1,4 +1,7 @@
 keybinds {
+    normal {
+        bind "Ctrl Tab" { GoToNextTab; }
+    }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
@@ -55,7 +58,6 @@ keybinds {
         bind "l" "Right" "Down" "j" { GoToNextTab; }
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
-
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
         bind "b" { BreakPane; SwitchToMode "Normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "Normal"; }
